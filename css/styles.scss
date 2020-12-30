@@ -1,0 +1,92 @@
+$border-color: rgba($color: #000000, $alpha: 0.1);
+
+*:focus
+{
+    outline: none;
+}
+
+nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+a
+{
+    margin: 1em;
+    text-decoration: none;
+    color: #0f0f0f;
+    font-size: 0.9em;
+}
+
+.container
+{
+    text-align: center;
+    transform: translateY(20vh);
+}
+
+#google-logo
+{
+    width: 20%;
+    margin-bottom: 2em;
+}
+
+#text-field
+{
+    box-sizing: border-box;
+    border: 1px solid $border-color;
+    border-radius: 5em;
+    width: 45em;
+    height: 3.5em;
+    padding: 0.8em 4em;
+    margin-bottom: 2em;
+    box-shadow: 0.1em 0.1em 0.4em 0 rgba($color: #000000, $alpha: 0.1);
+}
+
+%icon-styles
+{
+    position: relative;
+    top: 0.1em;
+    opacity: 0.5;
+}
+
+.fa-search 
+{
+    @extend %icon-styles;
+    left: 2.5em;
+}
+
+.fa-microphone
+{
+    @extend %icon-styles;
+    right: 2.5em;
+}
+
+.fa-camera
+{
+    @extend %icon-styles;
+    right: 2.5em;
+}
+
+.fa-search:hover, .fa-microphone:hover, .fa-camera:hover
+{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.button
+{
+    padding: 10px;
+    margin: 0 1em;
+    border: none;
+    border-radius: 0.5em;
+    background-color: rgba($color: #f0f0f0, $alpha: 0.3);
+}
+
+.button:hover
+{
+    border: 1px solid $border-color;
+    cursor: pointer;
+}
+
