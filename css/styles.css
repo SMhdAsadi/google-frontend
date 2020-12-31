@@ -1,62 +1,84 @@
 *:focus {
-  outline: none; }
+  outline: none;
+}
 
 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end; }
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
 
-a {
+nav a {
   margin: 1em;
   text-decoration: none;
   color: #0f0f0f;
-  font-size: 0.9em; }
+  font-size: 0.9em;
+}
 
 .container {
   text-align: center;
-  transform: translateY(20vh); }
+  -webkit-transform: translateY(20vh);
+          transform: translateY(20vh);
+}
 
 #google-logo {
   width: 20%;
-  margin-bottom: 2em; }
+  margin-bottom: 2em;
+}
 
 #text-field {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5em;
   width: 45em;
   height: 3.5em;
   padding: 0.8em 4em;
   margin-bottom: 2em;
-  box-shadow: 0.1em 0.1em 0.4em 0 rgba(0, 0, 0, 0.1); }
+  -webkit-box-shadow: 0.1em 0.1em 0.4em 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0.1em 0.1em 0.4em 0 rgba(0, 0, 0, 0.1);
+}
 
 .fa-search, .fa-microphone, .fa-camera {
   position: relative;
   top: 0.1em;
-  opacity: 0.5; }
+  opacity: 0.5;
+}
 
 .fa-search {
-  left: 2.5em; }
+  left: 2.5em;
+}
 
 .fa-microphone {
-  right: 2.5em; }
+  right: 2.5em;
+}
 
 .fa-camera {
-  right: 2.5em; }
+  right: 2.5em;
+}
 
 .fa-search:hover, .fa-microphone:hover, .fa-camera:hover {
   opacity: 1;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .button {
   padding: 10px;
   margin: 0 1em;
   border: none;
   border-radius: 0.5em;
-  background-color: rgba(240, 240, 240, 0.3); }
+  background-color: rgba(240, 240, 240, 0.3);
+}
 
 .button:hover {
   border: 1px solid rgba(0, 0, 0, 0.1);
-  cursor: pointer; }
-
+  cursor: pointer;
+}
 /*# sourceMappingURL=styles.css.map */
